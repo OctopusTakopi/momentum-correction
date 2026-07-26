@@ -1,0 +1,17 @@
+{
+  "method": "moving block bootstrap",
+  "block_days": 30,
+  "repetitions": 2000,
+  "seed": 20260724,
+  "cagr_percentiles": {
+    "2.5": -0.6088466369490817,
+    "50": -0.25090600541885383,
+    "97.5": 0.5178721860396925
+  },
+  "max_drawdown_percentiles": {
+    "2.5": -0.9231965249834119,
+    "50": -0.7221169259013818,
+    "97.5": -0.4035892003943005
+  },
+  "probability_cagr_le_zero": 0.7865
+}

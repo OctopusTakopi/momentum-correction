@@ -1,0 +1,19 @@
+{
+  "image": "source_chart.jpg",
+  "columns": 1091,
+  "days_per_column": 2.19,
+  "start_percent": 1.9,
+  "end_percent": 954.7,
+  "peak_percent": 996.2,
+  "columns_moving": 0.274,
+  "year_end_percent": {
+    "2020": -2.8,
+    "2021": 183.0,
+    "2022": 138.7,
+    "2023": 164.2,
+    "2024": 431.1,
+    "2025": 917.0,
+    "2026": 939.6
+  },
+  "baseline_columns_moving": 0.796
+}

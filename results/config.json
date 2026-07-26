@@ -1,0 +1,3081 @@
+{
+  "config": {
+    "volume_count": 50,
+    "volume_lookback": 30,
+    "momentum_lookback": 20,
+    "volatility_lookback": 20,
+    "momentum_percentile": 0.8,
+    "correction_sigma": 1.0,
+    "order_life_days": 3,
+    "holding_days": 5,
+    "max_symbol_fraction": 0.1,
+    "max_gross_fraction": 1.0,
+    "initial_equity": 100000.0,
+    "entry_maker_bps": 10.0,
+    "entry_taker_bps": 10.0,
+    "exit_taker_bps": 10.0,
+    "market_entry_slippage_bps": 5.0,
+    "exit_slippage_bps": 5.0,
+    "start": "2020-01-01",
+    "end": "2026-06-30",
+    "regime_symbol": "",
+    "regime_kind": "sma",
+    "regime_span": 0,
+    "regime_confirm_days": 1
+  },
+  "test_start": "2024-01-01",
+  "coverage": {
+    "generated_at_utc": "2026-07-24T17:01:07+00:00",
+    "requested_start": "2019-10",
+    "requested_end": "2026-06",
+    "symbols": 599,
+    "archives": 24435,
+    "stable_bases_excluded": [
+      "AEUR",
+      "BFDUSD",
+      "BFUSD",
+      "BKRW",
+      "BRL",
+      "BUSD",
+      "DAI",
+      "EUR",
+      "EURI",
+      "FDUSD",
+      "GBP",
+      "GUSD",
+      "IDRT",
+      "JPY",
+      "PAX",
+      "RLUSD",
+      "RUB",
+      "SUSD",
+      "TUSD",
+      "UAH",
+      "USD1",
+      "USDC",
+      "USDE",
+      "USDP",
+      "USDS",
+      "UST",
+      "USTC",
+      "VAI",
+      "XUSD"
+    ],
+    "wrapped_bases_excluded": [
+      "BETH",
+      "BTCB",
+      "WBETH",
+      "WBNB",
+      "WBTC",
+      "WETH"
+    ],
+    "leveraged_suffixes_excluded": [
+      "UP",
+      "DOWN",
+      "BULL",
+      "BEAR"
+    ],
+    "coverage": {
+      "0GUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "1000CATUSDT": {
+        "archives": 19,
+        "first": "2024-12",
+        "last": "2026-06"
+      },
+      "1000CHEEMSUSDT": {
+        "archives": 17,
+        "first": "2025-02",
+        "last": "2026-06"
+      },
+      "1000SATSUSDT": {
+        "archives": 31,
+        "first": "2023-12",
+        "last": "2026-06"
+      },
+      "1INCHUSDT": {
+        "archives": 67,
+        "first": "2020-12",
+        "last": "2026-06"
+      },
+      "1MBABYDOGEUSDT": {
+        "archives": 22,
+        "first": "2024-09",
+        "last": "2026-06"
+      },
+      "2ZUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "A2ZUSDT": {
+        "archives": 10,
+        "first": "2025-07",
+        "last": "2026-04"
+      },
+      "AAVEUSDT": {
+        "archives": 69,
+        "first": "2020-10",
+        "last": "2026-06"
+      },
+      "ACAUSDT": {
+        "archives": 50,
+        "first": "2022-01",
+        "last": "2026-02"
+      },
+      "ACEUSDT": {
+        "archives": 31,
+        "first": "2023-12",
+        "last": "2026-06"
+      },
+      "ACHUSDT": {
+        "archives": 54,
+        "first": "2022-01",
+        "last": "2026-06"
+      },
+      "ACMUSDT": {
+        "archives": 65,
+        "first": "2021-02",
+        "last": "2026-06"
+      },
+      "ACTUSDT": {
+        "archives": 20,
+        "first": "2024-11",
+        "last": "2026-06"
+      },
+      "ACXUSDT": {
+        "archives": 19,
+        "first": "2024-12",
+        "last": "2026-06"
+      },
+      "ADAUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ADXUSDT": {
+        "archives": 57,
+        "first": "2021-10",
+        "last": "2026-06"
+      },
+      "AERGOUSDT": {
+        "archives": 23,
+        "first": "2023-05",
+        "last": "2025-03"
+      },
+      "AEVOUSDT": {
+        "archives": 28,
+        "first": "2024-03",
+        "last": "2026-06"
+      },
+      "AGIXUSDT": {
+        "archives": 18,
+        "first": "2023-02",
+        "last": "2024-07"
+      },
+      "AGLDUSDT": {
+        "archives": 57,
+        "first": "2021-10",
+        "last": "2026-06"
+      },
+      "AIGENSYNUSDT": {
+        "archives": 2,
+        "first": "2026-05",
+        "last": "2026-06"
+      },
+      "AIONUSDT": {
+        "archives": 37,
+        "first": "2020-02",
+        "last": "2023-02"
+      },
+      "AIUSDT": {
+        "archives": 30,
+        "first": "2024-01",
+        "last": "2026-06"
+      },
+      "AIXBTUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "AKROUSDT": {
+        "archives": 50,
+        "first": "2020-11",
+        "last": "2024-12"
+      },
+      "ALCXUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "ALGOUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ALICEUSDT": {
+        "archives": 64,
+        "first": "2021-03",
+        "last": "2026-06"
+      },
+      "ALLOUSDT": {
+        "archives": 8,
+        "first": "2025-11",
+        "last": "2026-06"
+      },
+      "ALPACAUSDT": {
+        "archives": 46,
+        "first": "2021-08",
+        "last": "2025-05"
+      },
+      "ALPHAUSDT": {
+        "archives": 58,
+        "first": "2020-10",
+        "last": "2025-07"
+      },
+      "ALPINEUSDT": {
+        "archives": 53,
+        "first": "2022-02",
+        "last": "2026-06"
+      },
+      "ALTUSDT": {
+        "archives": 30,
+        "first": "2024-01",
+        "last": "2026-06"
+      },
+      "AMBUSDT": {
+        "archives": 24,
+        "first": "2023-03",
+        "last": "2025-02"
+      },
+      "AMDBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "AMPUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "ANCUSDT": {
+        "archives": 12,
+        "first": "2022-01",
+        "last": "2022-12"
+      },
+      "ANIMEUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "ANKRUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ANTUSDT": {
+        "archives": 43,
+        "first": "2020-08",
+        "last": "2024-02"
+      },
+      "ANYUSDT": {
+        "archives": 4,
+        "first": "2021-12",
+        "last": "2022-03"
+      },
+      "APEUSDT": {
+        "archives": 52,
+        "first": "2022-03",
+        "last": "2026-06"
+      },
+      "API3USDT": {
+        "archives": 54,
+        "first": "2022-01",
+        "last": "2026-06"
+      },
+      "APTUSDT": {
+        "archives": 45,
+        "first": "2022-10",
+        "last": "2026-06"
+      },
+      "ARBUSDT": {
+        "archives": 40,
+        "first": "2023-03",
+        "last": "2026-06"
+      },
+      "ARDRUSDT": {
+        "archives": 74,
+        "first": "2020-05",
+        "last": "2026-06"
+      },
+      "ARKMUSDT": {
+        "archives": 36,
+        "first": "2023-07",
+        "last": "2026-06"
+      },
+      "ARKUSDT": {
+        "archives": 34,
+        "first": "2023-09",
+        "last": "2026-06"
+      },
+      "ARPAUSDT": {
+        "archives": 80,
+        "first": "2019-11",
+        "last": "2026-06"
+      },
+      "ARUSDT": {
+        "archives": 62,
+        "first": "2021-05",
+        "last": "2026-06"
+      },
+      "ASRUSDT": {
+        "archives": 67,
+        "first": "2020-12",
+        "last": "2026-06"
+      },
+      "ASTERUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "ASTRUSDT": {
+        "archives": 53,
+        "first": "2022-02",
+        "last": "2026-06"
+      },
+      "ASTUSDT": {
+        "archives": 23,
+        "first": "2023-05",
+        "last": "2025-03"
+      },
+      "ATAUSDT": {
+        "archives": 60,
+        "first": "2021-06",
+        "last": "2026-05"
+      },
+      "ATMUSDT": {
+        "archives": 67,
+        "first": "2020-12",
+        "last": "2026-06"
+      },
+      "ATOMUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ATUSDT": {
+        "archives": 8,
+        "first": "2025-11",
+        "last": "2026-06"
+      },
+      "AUCTIONUSDT": {
+        "archives": 57,
+        "first": "2021-10",
+        "last": "2026-06"
+      },
+      "AUDIOUSDT": {
+        "archives": 69,
+        "first": "2020-10",
+        "last": "2026-06"
+      },
+      "AUDUSDT": {
+        "archives": 35,
+        "first": "2020-08",
+        "last": "2023-06"
+      },
+      "AUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "AUTOUSDT": {
+        "archives": 25,
+        "first": "2021-04",
+        "last": "2023-04"
+      },
+      "AVAUSDT": {
+        "archives": 68,
+        "first": "2020-11",
+        "last": "2026-06"
+      },
+      "AVAXUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "AVNTUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "AWEUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "AXLUSDT": {
+        "archives": 28,
+        "first": "2024-03",
+        "last": "2026-06"
+      },
+      "AXSUSDT": {
+        "archives": 68,
+        "first": "2020-11",
+        "last": "2026-06"
+      },
+      "BABYUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "BADGERUSDT": {
+        "archives": 50,
+        "first": "2021-03",
+        "last": "2025-04"
+      },
+      "BAKEUSDT": {
+        "archives": 54,
+        "first": "2021-04",
+        "last": "2025-09"
+      },
+      "BALUSDT": {
+        "archives": 57,
+        "first": "2020-08",
+        "last": "2025-04"
+      },
+      "BANANAS31USDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "BANANAUSDT": {
+        "archives": 24,
+        "first": "2024-07",
+        "last": "2026-06"
+      },
+      "BANDUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "BANKUSDT": {
+        "archives": 8,
+        "first": "2025-11",
+        "last": "2026-06"
+      },
+      "BARDUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "BARUSDT": {
+        "archives": 63,
+        "first": "2021-04",
+        "last": "2026-06"
+      },
+      "BATUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "BBUSDT": {
+        "archives": 26,
+        "first": "2024-05",
+        "last": "2026-06"
+      },
+      "BCHABCUSDT": {
+        "archives": 2,
+        "first": "2019-10",
+        "last": "2019-11"
+      },
+      "BCHUSDT": {
+        "archives": 80,
+        "first": "2019-11",
+        "last": "2026-06"
+      },
+      "BEAMUSDT": {
+        "archives": 40,
+        "first": "2019-10",
+        "last": "2023-01"
+      },
+      "BEAMXUSDT": {
+        "archives": 32,
+        "first": "2023-11",
+        "last": "2026-06"
+      },
+      "BELUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "BERAUSDT": {
+        "archives": 17,
+        "first": "2025-02",
+        "last": "2026-06"
+      },
+      "BETAUSDT": {
+        "archives": 43,
+        "first": "2021-10",
+        "last": "2025-04"
+      },
+      "BICOUSDT": {
+        "archives": 55,
+        "first": "2021-12",
+        "last": "2026-06"
+      },
+      "BIFIUSDT": {
+        "archives": 49,
+        "first": "2022-04",
+        "last": "2026-04"
+      },
+      "BIGTIMEUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "BIOUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "BLURUSDT": {
+        "archives": 32,
+        "first": "2023-11",
+        "last": "2026-06"
+      },
+      "BLZUSDT": {
+        "archives": 53,
+        "first": "2020-08",
+        "last": "2024-12"
+      },
+      "BMTUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "BNBUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "BNSOLUSDT": {
+        "archives": 21,
+        "first": "2024-10",
+        "last": "2026-06"
+      },
+      "BNTUSDT": {
+        "archives": 77,
+        "first": "2020-02",
+        "last": "2026-06"
+      },
+      "BNXUSDT": {
+        "archives": 41,
+        "first": "2021-11",
+        "last": "2025-03"
+      },
+      "BOMEUSDT": {
+        "archives": 28,
+        "first": "2024-03",
+        "last": "2026-06"
+      },
+      "BONDUSDT": {
+        "archives": 37,
+        "first": "2021-07",
+        "last": "2024-07"
+      },
+      "BONKUSDT": {
+        "archives": 31,
+        "first": "2023-12",
+        "last": "2026-06"
+      },
+      "BREVUSDT": {
+        "archives": 6,
+        "first": "2026-01",
+        "last": "2026-06"
+      },
+      "BROCCOLI714USDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "BSWUSDT": {
+        "archives": 41,
+        "first": "2022-03",
+        "last": "2025-07"
+      },
+      "BTCSTUSDT": {
+        "archives": 23,
+        "first": "2021-01",
+        "last": "2022-11"
+      },
+      "BTCUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "BTGUSDT": {
+        "archives": 19,
+        "first": "2021-04",
+        "last": "2022-10"
+      },
+      "BTSUSDT": {
+        "archives": 47,
+        "first": "2020-02",
+        "last": "2023-12"
+      },
+      "BTTCUSDT": {
+        "archives": 54,
+        "first": "2022-01",
+        "last": "2026-06"
+      },
+      "BTTUSDT": {
+        "archives": 28,
+        "first": "2019-10",
+        "last": "2022-01"
+      },
+      "BURGERUSDT": {
+        "archives": 48,
+        "first": "2021-04",
+        "last": "2025-03"
+      },
+      "BZRXUSDT": {
+        "archives": 17,
+        "first": "2020-08",
+        "last": "2021-12"
+      },
+      "C98USDT": {
+        "archives": 60,
+        "first": "2021-07",
+        "last": "2026-06"
+      },
+      "CAKEUSDT": {
+        "archives": 65,
+        "first": "2021-02",
+        "last": "2026-06"
+      },
+      "CATIUSDT": {
+        "archives": 22,
+        "first": "2024-09",
+        "last": "2026-06"
+      },
+      "CELOUSDT": {
+        "archives": 66,
+        "first": "2021-01",
+        "last": "2026-06"
+      },
+      "CELRUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "CETUSUSDT": {
+        "archives": 20,
+        "first": "2024-11",
+        "last": "2026-06"
+      },
+      "CFGUSDT": {
+        "archives": 4,
+        "first": "2026-03",
+        "last": "2026-06"
+      },
+      "CFXUSDT": {
+        "archives": 64,
+        "first": "2021-03",
+        "last": "2026-06"
+      },
+      "CGPTUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "CHESSUSDT": {
+        "archives": 53,
+        "first": "2021-10",
+        "last": "2026-02"
+      },
+      "CHIPUSDT": {
+        "archives": 3,
+        "first": "2026-04",
+        "last": "2026-06"
+      },
+      "CHRUSDT": {
+        "archives": 74,
+        "first": "2020-05",
+        "last": "2026-06"
+      },
+      "CHZUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "CITYUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "CKBUSDT": {
+        "archives": 66,
+        "first": "2021-01",
+        "last": "2026-06"
+      },
+      "CLVUSDT": {
+        "archives": 44,
+        "first": "2021-07",
+        "last": "2025-02"
+      },
+      "COCOSUSDT": {
+        "archives": 44,
+        "first": "2019-10",
+        "last": "2023-05"
+      },
+      "COMBOUSDT": {
+        "archives": 22,
+        "first": "2023-06",
+        "last": "2025-03"
+      },
+      "COMPUSDT": {
+        "archives": 73,
+        "first": "2020-06",
+        "last": "2026-06"
+      },
+      "COOKIEUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "COSUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "COTIUSDT": {
+        "archives": 77,
+        "first": "2020-02",
+        "last": "2026-06"
+      },
+      "COWUSDT": {
+        "archives": 20,
+        "first": "2024-11",
+        "last": "2026-06"
+      },
+      "CRCLBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "CREAMUSDT": {
+        "archives": 20,
+        "first": "2023-09",
+        "last": "2025-04"
+      },
+      "CRVUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "CTKUSDT": {
+        "archives": 69,
+        "first": "2020-10",
+        "last": "2026-06"
+      },
+      "CTSIUSDT": {
+        "archives": 75,
+        "first": "2020-04",
+        "last": "2026-06"
+      },
+      "CTXCUSDT": {
+        "archives": 66,
+        "first": "2019-11",
+        "last": "2025-04"
+      },
+      "CUSDT": {
+        "archives": 12,
+        "first": "2025-07",
+        "last": "2026-06"
+      },
+      "CVCUSDT": {
+        "archives": 77,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "CVPUSDT": {
+        "archives": 35,
+        "first": "2021-10",
+        "last": "2024-08"
+      },
+      "CVXUSDT": {
+        "archives": 55,
+        "first": "2021-12",
+        "last": "2026-06"
+      },
+      "CYBERUSDT": {
+        "archives": 35,
+        "first": "2023-08",
+        "last": "2026-06"
+      },
+      "DARUSDT": {
+        "archives": 39,
+        "first": "2021-11",
+        "last": "2025-01"
+      },
+      "DASHUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "DATAUSDT": {
+        "archives": 71,
+        "first": "2020-04",
+        "last": "2026-02"
+      },
+      "DCRUSDT": {
+        "archives": 72,
+        "first": "2020-07",
+        "last": "2026-06"
+      },
+      "DEGOUSDT": {
+        "archives": 62,
+        "first": "2021-03",
+        "last": "2026-04"
+      },
+      "DENTUSDT": {
+        "archives": 79,
+        "first": "2019-10",
+        "last": "2026-04"
+      },
+      "DEXEUSDT": {
+        "archives": 60,
+        "first": "2021-07",
+        "last": "2026-06"
+      },
+      "DFUSDT": {
+        "archives": 54,
+        "first": "2021-09",
+        "last": "2026-02"
+      },
+      "DGBUSDT": {
+        "archives": 72,
+        "first": "2020-07",
+        "last": "2026-06"
+      },
+      "DIAUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "DNTUSDT": {
+        "archives": 24,
+        "first": "2020-11",
+        "last": "2022-10"
+      },
+      "DOCKUSDT": {
+        "archives": 58,
+        "first": "2019-10",
+        "last": "2024-07"
+      },
+      "DODOUSDT": {
+        "archives": 65,
+        "first": "2021-02",
+        "last": "2026-06"
+      },
+      "DOGEUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "DOGSUSDT": {
+        "archives": 23,
+        "first": "2024-08",
+        "last": "2026-06"
+      },
+      "DOLOUSDT": {
+        "archives": 11,
+        "first": "2025-08",
+        "last": "2026-06"
+      },
+      "DOTUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "DREPUSDT": {
+        "archives": 52,
+        "first": "2020-01",
+        "last": "2024-04"
+      },
+      "DUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "DUSKUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "DYDXUSDT": {
+        "archives": 58,
+        "first": "2021-09",
+        "last": "2026-06"
+      },
+      "DYMUSDT": {
+        "archives": 29,
+        "first": "2024-02",
+        "last": "2026-06"
+      },
+      "EDENUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "EDUUSDT": {
+        "archives": 39,
+        "first": "2023-04",
+        "last": "2026-06"
+      },
+      "EGLDUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "EIGENUSDT": {
+        "archives": 21,
+        "first": "2024-10",
+        "last": "2026-06"
+      },
+      "ELFUSDT": {
+        "archives": 44,
+        "first": "2021-09",
+        "last": "2025-04"
+      },
+      "ENAUSDT": {
+        "archives": 27,
+        "first": "2024-04",
+        "last": "2026-06"
+      },
+      "ENJUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ENSOUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "ENSUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "EOSUSDT": {
+        "archives": 68,
+        "first": "2019-10",
+        "last": "2025-05"
+      },
+      "EPICUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "EPSUSDT": {
+        "archives": 14,
+        "first": "2021-04",
+        "last": "2022-05"
+      },
+      "EPXUSDT": {
+        "archives": 28,
+        "first": "2022-05",
+        "last": "2024-08"
+      },
+      "ERAUSDT": {
+        "archives": 12,
+        "first": "2025-07",
+        "last": "2026-06"
+      },
+      "ERDUSDT": {
+        "archives": 11,
+        "first": "2019-10",
+        "last": "2020-08"
+      },
+      "ERNUSDT": {
+        "archives": 46,
+        "first": "2021-06",
+        "last": "2025-03"
+      },
+      "ESPUSDT": {
+        "archives": 5,
+        "first": "2026-02",
+        "last": "2026-06"
+      },
+      "ETCUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ETHFIUSDT": {
+        "archives": 28,
+        "first": "2024-03",
+        "last": "2026-06"
+      },
+      "ETHUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "EULUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "EWYBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "FARMUSDT": {
+        "archives": 58,
+        "first": "2021-08",
+        "last": "2026-05"
+      },
+      "FETUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "FFUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "FIDAUSDT": {
+        "archives": 58,
+        "first": "2021-09",
+        "last": "2026-06"
+      },
+      "FILUSDT": {
+        "archives": 69,
+        "first": "2020-10",
+        "last": "2026-06"
+      },
+      "FIOUSDT": {
+        "archives": 68,
+        "first": "2020-09",
+        "last": "2026-04"
+      },
+      "FIROUSDT": {
+        "archives": 52,
+        "first": "2021-01",
+        "last": "2025-04"
+      },
+      "FISUSDT": {
+        "archives": 58,
+        "first": "2021-03",
+        "last": "2025-12"
+      },
+      "FLMUSDT": {
+        "archives": 63,
+        "first": "2020-09",
+        "last": "2025-11"
+      },
+      "FLOKIUSDT": {
+        "archives": 38,
+        "first": "2023-05",
+        "last": "2026-06"
+      },
+      "FLOWUSDT": {
+        "archives": 60,
+        "first": "2021-07",
+        "last": "2026-06"
+      },
+      "FLUXUSDT": {
+        "archives": 55,
+        "first": "2021-12",
+        "last": "2026-06"
+      },
+      "FOGOUSDT": {
+        "archives": 6,
+        "first": "2026-01",
+        "last": "2026-06"
+      },
+      "FORMUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "FORTHUSDT": {
+        "archives": 61,
+        "first": "2021-04",
+        "last": "2026-04"
+      },
+      "FORUSDT": {
+        "archives": 37,
+        "first": "2021-08",
+        "last": "2024-08"
+      },
+      "FRAXUSDT": {
+        "archives": 6,
+        "first": "2026-01",
+        "last": "2026-06"
+      },
+      "FRONTUSDT": {
+        "archives": 35,
+        "first": "2021-10",
+        "last": "2024-08"
+      },
+      "FTMUSDT": {
+        "archives": 64,
+        "first": "2019-10",
+        "last": "2025-01"
+      },
+      "FTTUSDT": {
+        "archives": 70,
+        "first": "2019-12",
+        "last": "2026-06"
+      },
+      "FUNUSDT": {
+        "archives": 79,
+        "first": "2019-10",
+        "last": "2026-04"
+      },
+      "FUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "FXSUSDT": {
+        "archives": 50,
+        "first": "2021-12",
+        "last": "2026-01"
+      },
+      "GALAUSDT": {
+        "archives": 58,
+        "first": "2021-09",
+        "last": "2026-06"
+      },
+      "GALUSDT": {
+        "archives": 27,
+        "first": "2022-05",
+        "last": "2024-07"
+      },
+      "GASUSDT": {
+        "archives": 40,
+        "first": "2023-03",
+        "last": "2026-06"
+      },
+      "GENIUSUSDT": {
+        "archives": 2,
+        "first": "2026-05",
+        "last": "2026-06"
+      },
+      "GFTUSDT": {
+        "archives": 16,
+        "first": "2023-09",
+        "last": "2024-12"
+      },
+      "GHSTUSDT": {
+        "archives": 55,
+        "first": "2021-08",
+        "last": "2026-02"
+      },
+      "GIGGLEUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "GLMRUSDT": {
+        "archives": 54,
+        "first": "2022-01",
+        "last": "2026-06"
+      },
+      "GLMUSDT": {
+        "archives": 40,
+        "first": "2023-03",
+        "last": "2026-06"
+      },
+      "GMTUSDT": {
+        "archives": 52,
+        "first": "2022-03",
+        "last": "2026-06"
+      },
+      "GMXUSDT": {
+        "archives": 45,
+        "first": "2022-10",
+        "last": "2026-06"
+      },
+      "GNOUSDT": {
+        "archives": 59,
+        "first": "2021-08",
+        "last": "2026-06"
+      },
+      "GNSUSDT": {
+        "archives": 41,
+        "first": "2023-02",
+        "last": "2026-06"
+      },
+      "GPSUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "GRTUSDT": {
+        "archives": 67,
+        "first": "2020-12",
+        "last": "2026-06"
+      },
+      "GTCUSDT": {
+        "archives": 61,
+        "first": "2021-06",
+        "last": "2026-06"
+      },
+      "GTOUSDT": {
+        "archives": 38,
+        "first": "2019-10",
+        "last": "2022-11"
+      },
+      "GUNUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "GUSDT": {
+        "archives": 24,
+        "first": "2024-07",
+        "last": "2026-06"
+      },
+      "GXSUSDT": {
+        "archives": 24,
+        "first": "2020-05",
+        "last": "2022-04"
+      },
+      "HAEDALUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "HARDUSDT": {
+        "archives": 54,
+        "first": "2020-11",
+        "last": "2025-04"
+      },
+      "HBARUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "HCUSDT": {
+        "archives": 14,
+        "first": "2019-10",
+        "last": "2020-11"
+      },
+      "HEIUSDT": {
+        "archives": 17,
+        "first": "2025-02",
+        "last": "2026-06"
+      },
+      "HEMIUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "HFTUSDT": {
+        "archives": 44,
+        "first": "2022-11",
+        "last": "2026-06"
+      },
+      "HIFIUSDT": {
+        "archives": 33,
+        "first": "2023-01",
+        "last": "2025-09"
+      },
+      "HIGHUSDT": {
+        "archives": 55,
+        "first": "2021-12",
+        "last": "2026-06"
+      },
+      "HIVEUSDT": {
+        "archives": 75,
+        "first": "2020-04",
+        "last": "2026-06"
+      },
+      "HMSTRUSDT": {
+        "archives": 22,
+        "first": "2024-09",
+        "last": "2026-06"
+      },
+      "HNTUSDT": {
+        "archives": 26,
+        "first": "2020-09",
+        "last": "2022-10"
+      },
+      "HOLOUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "HOMEUSDT": {
+        "archives": 13,
+        "first": "2025-06",
+        "last": "2026-06"
+      },
+      "HOOKUSDT": {
+        "archives": 41,
+        "first": "2022-12",
+        "last": "2026-04"
+      },
+      "HOTUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "HUMAUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "HYPERUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "ICPUSDT": {
+        "archives": 62,
+        "first": "2021-05",
+        "last": "2026-06"
+      },
+      "ICXUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "IDEXUSDT": {
+        "archives": 56,
+        "first": "2021-09",
+        "last": "2026-04"
+      },
+      "IDUSDT": {
+        "archives": 40,
+        "first": "2023-03",
+        "last": "2026-06"
+      },
+      "ILVUSDT": {
+        "archives": 58,
+        "first": "2021-09",
+        "last": "2026-06"
+      },
+      "IMXUSDT": {
+        "archives": 54,
+        "first": "2022-01",
+        "last": "2026-06"
+      },
+      "INITUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "INJUSDT": {
+        "archives": 69,
+        "first": "2020-10",
+        "last": "2026-06"
+      },
+      "INTCBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "IOSTUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "IOTAUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "IOTXUSDT": {
+        "archives": 80,
+        "first": "2019-11",
+        "last": "2026-06"
+      },
+      "IOUSDT": {
+        "archives": 25,
+        "first": "2024-06",
+        "last": "2026-06"
+      },
+      "IQUSDT": {
+        "archives": 34,
+        "first": "2023-09",
+        "last": "2026-06"
+      },
+      "IRISUSDT": {
+        "archives": 53,
+        "first": "2020-08",
+        "last": "2024-12"
+      },
+      "JASMYUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "JOEUSDT": {
+        "archives": 55,
+        "first": "2021-12",
+        "last": "2026-06"
+      },
+      "JSTUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "JTOUSDT": {
+        "archives": 31,
+        "first": "2023-12",
+        "last": "2026-06"
+      },
+      "JUVUSDT": {
+        "archives": 67,
+        "first": "2020-12",
+        "last": "2026-06"
+      },
+      "KAIAUSDT": {
+        "archives": 21,
+        "first": "2024-10",
+        "last": "2026-06"
+      },
+      "KAITOUSDT": {
+        "archives": 17,
+        "first": "2025-02",
+        "last": "2026-06"
+      },
+      "KATUSDT": {
+        "archives": 4,
+        "first": "2026-03",
+        "last": "2026-06"
+      },
+      "KAVAUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "KDAUSDT": {
+        "archives": 45,
+        "first": "2022-03",
+        "last": "2025-11"
+      },
+      "KEEPUSDT": {
+        "archives": 9,
+        "first": "2021-06",
+        "last": "2022-02"
+      },
+      "KERNELUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "KEYUSDT": {
+        "archives": 63,
+        "first": "2019-10",
+        "last": "2024-12"
+      },
+      "KGSTUSDT": {
+        "archives": 7,
+        "first": "2025-12",
+        "last": "2026-06"
+      },
+      "KITEUSDT": {
+        "archives": 8,
+        "first": "2025-11",
+        "last": "2026-06"
+      },
+      "KLAYUSDT": {
+        "archives": 41,
+        "first": "2021-06",
+        "last": "2024-10"
+      },
+      "KMDUSDT": {
+        "archives": 60,
+        "first": "2020-08",
+        "last": "2025-07"
+      },
+      "KMNOUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "KNCUSDT": {
+        "archives": 73,
+        "first": "2020-06",
+        "last": "2026-06"
+      },
+      "KP3RUSDT": {
+        "archives": 37,
+        "first": "2021-11",
+        "last": "2024-11"
+      },
+      "KSMUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "LAUSDT": {
+        "archives": 12,
+        "first": "2025-07",
+        "last": "2026-06"
+      },
+      "LAYERUSDT": {
+        "archives": 17,
+        "first": "2025-02",
+        "last": "2026-06"
+      },
+      "LAZIOUSDT": {
+        "archives": 57,
+        "first": "2021-10",
+        "last": "2026-06"
+      },
+      "LDOUSDT": {
+        "archives": 50,
+        "first": "2022-05",
+        "last": "2026-06"
+      },
+      "LENDUSDT": {
+        "archives": 6,
+        "first": "2020-05",
+        "last": "2020-10"
+      },
+      "LEVERUSDT": {
+        "archives": 37,
+        "first": "2022-07",
+        "last": "2025-07"
+      },
+      "LINAUSDT": {
+        "archives": 49,
+        "first": "2021-03",
+        "last": "2025-03"
+      },
+      "LINEAUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "LINKUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "LISTAUSDT": {
+        "archives": 25,
+        "first": "2024-06",
+        "last": "2026-06"
+      },
+      "LITEBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "LITUSDT": {
+        "archives": 49,
+        "first": "2021-02",
+        "last": "2025-02"
+      },
+      "LOKAUSDT": {
+        "archives": 43,
+        "first": "2022-01",
+        "last": "2025-07"
+      },
+      "LOOMUSDT": {
+        "archives": 18,
+        "first": "2023-03",
+        "last": "2024-08"
+      },
+      "LPTUSDT": {
+        "archives": 62,
+        "first": "2021-05",
+        "last": "2026-06"
+      },
+      "LQTYUSDT": {
+        "archives": 41,
+        "first": "2023-02",
+        "last": "2026-06"
+      },
+      "LRCUSDT": {
+        "archives": 71,
+        "first": "2020-06",
+        "last": "2026-04"
+      },
+      "LSKUSDT": {
+        "archives": 77,
+        "first": "2020-02",
+        "last": "2026-06"
+      },
+      "LTCUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "LTOUSDT": {
+        "archives": 66,
+        "first": "2020-02",
+        "last": "2025-07"
+      },
+      "LUMIAUSDT": {
+        "archives": 21,
+        "first": "2024-10",
+        "last": "2026-06"
+      },
+      "LUNAUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "LUNCUSDT": {
+        "archives": 46,
+        "first": "2022-09",
+        "last": "2026-06"
+      },
+      "MAGICUSDT": {
+        "archives": 43,
+        "first": "2022-12",
+        "last": "2026-06"
+      },
+      "MANAUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "MANTAUSDT": {
+        "archives": 30,
+        "first": "2024-01",
+        "last": "2026-06"
+      },
+      "MANTRAUSDT": {
+        "archives": 4,
+        "first": "2026-03",
+        "last": "2026-06"
+      },
+      "MASKUSDT": {
+        "archives": 62,
+        "first": "2021-05",
+        "last": "2026-06"
+      },
+      "MATICUSDT": {
+        "archives": 60,
+        "first": "2019-10",
+        "last": "2024-09"
+      },
+      "MAVUSDT": {
+        "archives": 37,
+        "first": "2023-06",
+        "last": "2026-06"
+      },
+      "MBLUSDT": {
+        "archives": 77,
+        "first": "2020-02",
+        "last": "2026-06"
+      },
+      "MBOXUSDT": {
+        "archives": 59,
+        "first": "2021-08",
+        "last": "2026-06"
+      },
+      "MCOUSDT": {
+        "archives": 12,
+        "first": "2019-11",
+        "last": "2020-10"
+      },
+      "MCUSDT": {
+        "archives": 24,
+        "first": "2021-12",
+        "last": "2023-11"
+      },
+      "MDTUSDT": {
+        "archives": 71,
+        "first": "2020-06",
+        "last": "2026-04"
+      },
+      "MDXUSDT": {
+        "archives": 39,
+        "first": "2021-05",
+        "last": "2024-07"
+      },
+      "MEGAUSDT": {
+        "archives": 3,
+        "first": "2026-04",
+        "last": "2026-06"
+      },
+      "MEMEUSDT": {
+        "archives": 32,
+        "first": "2023-11",
+        "last": "2026-06"
+      },
+      "METABUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "METISUSDT": {
+        "archives": 28,
+        "first": "2024-03",
+        "last": "2026-06"
+      },
+      "METUSDT": {
+        "archives": 8,
+        "first": "2025-11",
+        "last": "2026-06"
+      },
+      "MEUSDT": {
+        "archives": 19,
+        "first": "2024-12",
+        "last": "2026-06"
+      },
+      "MFTUSDT": {
+        "archives": 40,
+        "first": "2019-10",
+        "last": "2023-01"
+      },
+      "MINAUSDT": {
+        "archives": 59,
+        "first": "2021-08",
+        "last": "2026-06"
+      },
+      "MIRAUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "MIRUSDT": {
+        "archives": 21,
+        "first": "2021-04",
+        "last": "2022-12"
+      },
+      "MITHUSDT": {
+        "archives": 39,
+        "first": "2019-10",
+        "last": "2022-12"
+      },
+      "MITOUSDT": {
+        "archives": 11,
+        "first": "2025-08",
+        "last": "2026-06"
+      },
+      "MKRUSDT": {
+        "archives": 63,
+        "first": "2020-07",
+        "last": "2025-09"
+      },
+      "MLNUSDT": {
+        "archives": 59,
+        "first": "2021-07",
+        "last": "2026-05"
+      },
+      "MMTUSDT": {
+        "archives": 8,
+        "first": "2025-11",
+        "last": "2026-06"
+      },
+      "MOBUSDT": {
+        "archives": 25,
+        "first": "2022-04",
+        "last": "2024-04"
+      },
+      "MORPHOUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "MOVEUSDT": {
+        "archives": 19,
+        "first": "2024-12",
+        "last": "2026-06"
+      },
+      "MOVRUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "MSFTBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "MSTRBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "MTLUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "MUBARAKUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "MUBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "MULTIUSDT": {
+        "archives": 23,
+        "first": "2022-04",
+        "last": "2024-02"
+      },
+      "NANOUSDT": {
+        "archives": 28,
+        "first": "2019-10",
+        "last": "2022-01"
+      },
+      "NBSUSDT": {
+        "archives": 26,
+        "first": "2020-09",
+        "last": "2022-10"
+      },
+      "NBTUSDT": {
+        "archives": 12,
+        "first": "2022-03",
+        "last": "2023-02"
+      },
+      "NEARUSDT": {
+        "archives": 69,
+        "first": "2020-10",
+        "last": "2026-06"
+      },
+      "NEBLUSDT": {
+        "archives": 7,
+        "first": "2022-10",
+        "last": "2023-04"
+      },
+      "NEIROUSDT": {
+        "archives": 22,
+        "first": "2024-09",
+        "last": "2026-06"
+      },
+      "NEOUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "NEWTUSDT": {
+        "archives": 13,
+        "first": "2025-06",
+        "last": "2026-06"
+      },
+      "NEXOUSDT": {
+        "archives": 51,
+        "first": "2022-04",
+        "last": "2026-06"
+      },
+      "NFPUSDT": {
+        "archives": 31,
+        "first": "2023-12",
+        "last": "2026-06"
+      },
+      "NIGHTUSDT": {
+        "archives": 4,
+        "first": "2026-03",
+        "last": "2026-06"
+      },
+      "NILUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "NKNUSDT": {
+        "archives": 77,
+        "first": "2019-10",
+        "last": "2026-02"
+      },
+      "NMRUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "NOMUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "NOTUSDT": {
+        "archives": 26,
+        "first": "2024-05",
+        "last": "2026-06"
+      },
+      "NPXSUSDT": {
+        "archives": 19,
+        "first": "2019-10",
+        "last": "2021-04"
+      },
+      "NTRNUSDT": {
+        "archives": 31,
+        "first": "2023-10",
+        "last": "2026-04"
+      },
+      "NULSUSDT": {
+        "archives": 67,
+        "first": "2019-10",
+        "last": "2025-04"
+      },
+      "NUUSDT": {
+        "archives": 9,
+        "first": "2021-06",
+        "last": "2022-02"
+      },
+      "NVDABUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "NXPCUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "OAXUSDT": {
+        "archives": 22,
+        "first": "2023-03",
+        "last": "2024-12"
+      },
+      "OCEANUSDT": {
+        "archives": 48,
+        "first": "2020-08",
+        "last": "2024-07"
+      },
+      "OGNUSDT": {
+        "archives": 78,
+        "first": "2020-01",
+        "last": "2026-06"
+      },
+      "OGUSDT": {
+        "archives": 67,
+        "first": "2020-12",
+        "last": "2026-06"
+      },
+      "OMGUSDT": {
+        "archives": 57,
+        "first": "2019-10",
+        "last": "2024-06"
+      },
+      "OMNIUSDT": {
+        "archives": 18,
+        "first": "2024-04",
+        "last": "2025-09"
+      },
+      "OMUSDT": {
+        "archives": 61,
+        "first": "2021-03",
+        "last": "2026-03"
+      },
+      "ONDOUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "ONEUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ONGUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ONTUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "OOKIUSDT": {
+        "archives": 36,
+        "first": "2021-12",
+        "last": "2024-11"
+      },
+      "OPENUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "OPGUSDT": {
+        "archives": 2,
+        "first": "2026-05",
+        "last": "2026-06"
+      },
+      "OPNUSDT": {
+        "archives": 4,
+        "first": "2026-03",
+        "last": "2026-06"
+      },
+      "OPUSDT": {
+        "archives": 49,
+        "first": "2022-06",
+        "last": "2026-06"
+      },
+      "ORCAUSDT": {
+        "archives": 19,
+        "first": "2024-12",
+        "last": "2026-06"
+      },
+      "ORDIUSDT": {
+        "archives": 32,
+        "first": "2023-11",
+        "last": "2026-06"
+      },
+      "ORNUSDT": {
+        "archives": 50,
+        "first": "2020-09",
+        "last": "2024-10"
+      },
+      "OSMOUSDT": {
+        "archives": 45,
+        "first": "2022-10",
+        "last": "2026-06"
+      },
+      "OXTUSDT": {
+        "archives": 68,
+        "first": "2020-09",
+        "last": "2026-04"
+      },
+      "PARTIUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "PAXGUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "PDAUSDT": {
+        "archives": 15,
+        "first": "2024-03",
+        "last": "2025-05"
+      },
+      "PENDLEUSDT": {
+        "archives": 36,
+        "first": "2023-07",
+        "last": "2026-06"
+      },
+      "PENGUUSDT": {
+        "archives": 19,
+        "first": "2024-12",
+        "last": "2026-06"
+      },
+      "PEOPLEUSDT": {
+        "archives": 55,
+        "first": "2021-12",
+        "last": "2026-06"
+      },
+      "PEPEUSDT": {
+        "archives": 38,
+        "first": "2023-05",
+        "last": "2026-06"
+      },
+      "PERLUSDT": {
+        "archives": 51,
+        "first": "2019-10",
+        "last": "2023-12"
+      },
+      "PERPUSDT": {
+        "archives": 57,
+        "first": "2021-03",
+        "last": "2025-11"
+      },
+      "PHAUSDT": {
+        "archives": 61,
+        "first": "2021-06",
+        "last": "2026-06"
+      },
+      "PHBUSDT": {
+        "archives": 43,
+        "first": "2022-11",
+        "last": "2026-05"
+      },
+      "PIVXUSDT": {
+        "archives": 32,
+        "first": "2023-11",
+        "last": "2026-06"
+      },
+      "PIXELUSDT": {
+        "archives": 29,
+        "first": "2024-02",
+        "last": "2026-06"
+      },
+      "PLAUSDT": {
+        "archives": 28,
+        "first": "2021-11",
+        "last": "2024-02"
+      },
+      "PLTRBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "PLUMEUSDT": {
+        "archives": 11,
+        "first": "2025-08",
+        "last": "2026-06"
+      },
+      "PNTUSDT": {
+        "archives": 47,
+        "first": "2020-06",
+        "last": "2024-04"
+      },
+      "PNUTUSDT": {
+        "archives": 20,
+        "first": "2024-11",
+        "last": "2026-06"
+      },
+      "POLSUSDT": {
+        "archives": 39,
+        "first": "2021-05",
+        "last": "2024-07"
+      },
+      "POLUSDT": {
+        "archives": 22,
+        "first": "2024-09",
+        "last": "2026-06"
+      },
+      "POLYUSDT": {
+        "archives": 14,
+        "first": "2021-09",
+        "last": "2022-10"
+      },
+      "POLYXUSDT": {
+        "archives": 45,
+        "first": "2022-10",
+        "last": "2026-06"
+      },
+      "PONDUSDT": {
+        "archives": 64,
+        "first": "2021-03",
+        "last": "2026-06"
+      },
+      "PORTALUSDT": {
+        "archives": 29,
+        "first": "2024-02",
+        "last": "2026-06"
+      },
+      "PORTOUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "POWRUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "PROMUSDT": {
+        "archives": 40,
+        "first": "2023-03",
+        "last": "2026-06"
+      },
+      "PROSUSDT": {
+        "archives": 28,
+        "first": "2023-01",
+        "last": "2025-04"
+      },
+      "PROVEUSDT": {
+        "archives": 11,
+        "first": "2025-08",
+        "last": "2026-06"
+      },
+      "PSGUSDT": {
+        "archives": 67,
+        "first": "2020-12",
+        "last": "2026-06"
+      },
+      "PUMPUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "PUNDIXUSDT": {
+        "archives": 63,
+        "first": "2021-04",
+        "last": "2026-06"
+      },
+      "PYRUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "PYTHUSDT": {
+        "archives": 29,
+        "first": "2024-02",
+        "last": "2026-06"
+      },
+      "QIUSDT": {
+        "archives": 56,
+        "first": "2021-11",
+        "last": "2026-06"
+      },
+      "QKCUSDT": {
+        "archives": 40,
+        "first": "2023-03",
+        "last": "2026-06"
+      },
+      "QNTUSDT": {
+        "archives": 60,
+        "first": "2021-07",
+        "last": "2026-06"
+      },
+      "QQQBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "QTUMUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "QUICKUSDT": {
+        "archives": 59,
+        "first": "2021-08",
+        "last": "2026-06"
+      },
+      "RADUSDT": {
+        "archives": 57,
+        "first": "2021-10",
+        "last": "2026-06"
+      },
+      "RAMPUSDT": {
+        "archives": 17,
+        "first": "2021-03",
+        "last": "2022-07"
+      },
+      "RAREUSDT": {
+        "archives": 57,
+        "first": "2021-10",
+        "last": "2026-06"
+      },
+      "RAYUSDT": {
+        "archives": 59,
+        "first": "2021-08",
+        "last": "2026-06"
+      },
+      "RDNTUSDT": {
+        "archives": 38,
+        "first": "2023-03",
+        "last": "2026-04"
+      },
+      "REDUSDT": {
+        "archives": 17,
+        "first": "2025-02",
+        "last": "2026-06"
+      },
+      "REEFUSDT": {
+        "archives": 45,
+        "first": "2020-12",
+        "last": "2024-08"
+      },
+      "REIUSDT": {
+        "archives": 44,
+        "first": "2022-05",
+        "last": "2025-12"
+      },
+      "RENDERUSDT": {
+        "archives": 24,
+        "first": "2024-07",
+        "last": "2026-06"
+      },
+      "RENUSDT": {
+        "archives": 63,
+        "first": "2019-10",
+        "last": "2024-12"
+      },
+      "REPUSDT": {
+        "archives": 31,
+        "first": "2020-06",
+        "last": "2022-12"
+      },
+      "REQUSDT": {
+        "archives": 59,
+        "first": "2021-08",
+        "last": "2026-06"
+      },
+      "RESOLVUSDT": {
+        "archives": 13,
+        "first": "2025-06",
+        "last": "2026-06"
+      },
+      "REUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "REZUSDT": {
+        "archives": 27,
+        "first": "2024-04",
+        "last": "2026-06"
+      },
+      "RGTUSDT": {
+        "archives": 5,
+        "first": "2021-11",
+        "last": "2022-03"
+      },
+      "RIFUSDT": {
+        "archives": 66,
+        "first": "2021-01",
+        "last": "2026-06"
+      },
+      "RLCUSDT": {
+        "archives": 80,
+        "first": "2019-11",
+        "last": "2026-06"
+      },
+      "RNDRUSDT": {
+        "archives": 33,
+        "first": "2021-11",
+        "last": "2024-07"
+      },
+      "ROBOUSDT": {
+        "archives": 4,
+        "first": "2026-03",
+        "last": "2026-06"
+      },
+      "RONINUSDT": {
+        "archives": 29,
+        "first": "2024-02",
+        "last": "2026-06"
+      },
+      "ROSEUSDT": {
+        "archives": 68,
+        "first": "2020-11",
+        "last": "2026-06"
+      },
+      "RPLUSDT": {
+        "archives": 42,
+        "first": "2023-01",
+        "last": "2026-06"
+      },
+      "RSRUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "RUNEUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "RVNUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "SAGAUSDT": {
+        "archives": 27,
+        "first": "2024-04",
+        "last": "2026-06"
+      },
+      "SAHARAUSDT": {
+        "archives": 13,
+        "first": "2025-06",
+        "last": "2026-06"
+      },
+      "SANDUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "SANTOSUSDT": {
+        "archives": 55,
+        "first": "2021-12",
+        "last": "2026-06"
+      },
+      "SAPIENUSDT": {
+        "archives": 8,
+        "first": "2025-11",
+        "last": "2026-06"
+      },
+      "SCRTUSDT": {
+        "archives": 54,
+        "first": "2022-01",
+        "last": "2026-06"
+      },
+      "SCRUSDT": {
+        "archives": 21,
+        "first": "2024-10",
+        "last": "2026-06"
+      },
+      "SCUSDT": {
+        "archives": 72,
+        "first": "2020-07",
+        "last": "2026-06"
+      },
+      "SEIUSDT": {
+        "archives": 35,
+        "first": "2023-08",
+        "last": "2026-06"
+      },
+      "SENTUSDT": {
+        "archives": 6,
+        "first": "2026-01",
+        "last": "2026-06"
+      },
+      "SFPUSDT": {
+        "archives": 65,
+        "first": "2021-02",
+        "last": "2026-06"
+      },
+      "SHELLUSDT": {
+        "archives": 17,
+        "first": "2025-02",
+        "last": "2026-06"
+      },
+      "SHIBUSDT": {
+        "archives": 62,
+        "first": "2021-05",
+        "last": "2026-06"
+      },
+      "SIGNUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "SKLUSDT": {
+        "archives": 67,
+        "first": "2020-12",
+        "last": "2026-06"
+      },
+      "SKYUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "SLFUSDT": {
+        "archives": 14,
+        "first": "2024-08",
+        "last": "2025-09"
+      },
+      "SLPUSDT": {
+        "archives": 63,
+        "first": "2021-04",
+        "last": "2026-06"
+      },
+      "SNDKBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "SNTUSDT": {
+        "archives": 24,
+        "first": "2023-05",
+        "last": "2025-04"
+      },
+      "SNXUSDT": {
+        "archives": 72,
+        "first": "2020-07",
+        "last": "2026-06"
+      },
+      "SOLUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "SOLVUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "SOMIUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "SOPHUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "SPCXBUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "SPELLUSDT": {
+        "archives": 55,
+        "first": "2021-12",
+        "last": "2026-06"
+      },
+      "SPKUSDT": {
+        "archives": 13,
+        "first": "2025-06",
+        "last": "2026-06"
+      },
+      "SRMUSDT": {
+        "archives": 28,
+        "first": "2020-08",
+        "last": "2022-11"
+      },
+      "SSVUSDT": {
+        "archives": 41,
+        "first": "2023-02",
+        "last": "2026-06"
+      },
+      "STEEMUSDT": {
+        "archives": 51,
+        "first": "2022-04",
+        "last": "2026-06"
+      },
+      "STGUSDT": {
+        "archives": 47,
+        "first": "2022-08",
+        "last": "2026-06"
+      },
+      "STMXUSDT": {
+        "archives": 57,
+        "first": "2020-06",
+        "last": "2025-02"
+      },
+      "STORJUSDT": {
+        "archives": 72,
+        "first": "2020-07",
+        "last": "2026-06"
+      },
+      "STORMUSDT": {
+        "archives": 9,
+        "first": "2019-10",
+        "last": "2020-06"
+      },
+      "STOUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "STPTUSDT": {
+        "archives": 63,
+        "first": "2020-03",
+        "last": "2025-05"
+      },
+      "STRATUSDT": {
+        "archives": 10,
+        "first": "2020-02",
+        "last": "2020-11"
+      },
+      "STRAXUSDT": {
+        "archives": 68,
+        "first": "2020-11",
+        "last": "2026-06"
+      },
+      "STRKUSDT": {
+        "archives": 29,
+        "first": "2024-02",
+        "last": "2026-06"
+      },
+      "STXUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "SUIUSDT": {
+        "archives": 38,
+        "first": "2023-05",
+        "last": "2026-06"
+      },
+      "SUNUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "SUPERUSDT": {
+        "archives": 64,
+        "first": "2021-03",
+        "last": "2026-06"
+      },
+      "SUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "SUSHIUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "SXPUSDT": {
+        "archives": 70,
+        "first": "2020-07",
+        "last": "2026-04"
+      },
+      "SXTUSDT": {
+        "archives": 14,
+        "first": "2025-05",
+        "last": "2026-06"
+      },
+      "SYNUSDT": {
+        "archives": 41,
+        "first": "2023-02",
+        "last": "2026-06"
+      },
+      "SYSUSDT": {
+        "archives": 57,
+        "first": "2021-09",
+        "last": "2026-05"
+      },
+      "TAOUSDT": {
+        "archives": 27,
+        "first": "2024-04",
+        "last": "2026-06"
+      },
+      "TCTUSDT": {
+        "archives": 34,
+        "first": "2020-01",
+        "last": "2022-10"
+      },
+      "TFUELUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "THETAUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "THEUSDT": {
+        "archives": 20,
+        "first": "2024-11",
+        "last": "2026-06"
+      },
+      "TIAUSDT": {
+        "archives": 33,
+        "first": "2023-10",
+        "last": "2026-06"
+      },
+      "TKOUSDT": {
+        "archives": 63,
+        "first": "2021-04",
+        "last": "2026-06"
+      },
+      "TLMUSDT": {
+        "archives": 63,
+        "first": "2021-04",
+        "last": "2026-06"
+      },
+      "TNSRUSDT": {
+        "archives": 27,
+        "first": "2024-04",
+        "last": "2026-06"
+      },
+      "TOMOUSDT": {
+        "archives": 50,
+        "first": "2019-10",
+        "last": "2023-11"
+      },
+      "TONUSDT": {
+        "archives": 23,
+        "first": "2024-08",
+        "last": "2026-06"
+      },
+      "TORNUSDT": {
+        "archives": 19,
+        "first": "2021-06",
+        "last": "2022-12"
+      },
+      "TOWNSUSDT": {
+        "archives": 11,
+        "first": "2025-08",
+        "last": "2026-06"
+      },
+      "TRBUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "TREEUSDT": {
+        "archives": 12,
+        "first": "2025-07",
+        "last": "2026-06"
+      },
+      "TRIBEUSDT": {
+        "archives": 16,
+        "first": "2021-08",
+        "last": "2022-11"
+      },
+      "TROYUSDT": {
+        "archives": 65,
+        "first": "2019-12",
+        "last": "2025-04"
+      },
+      "TRUMPUSDT": {
+        "archives": 18,
+        "first": "2025-01",
+        "last": "2026-06"
+      },
+      "TRUUSDT": {
+        "archives": 64,
+        "first": "2021-01",
+        "last": "2026-04"
+      },
+      "TRXUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "TSLABUSDT": {
+        "archives": 1,
+        "first": "2026-06",
+        "last": "2026-06"
+      },
+      "TSTUSDT": {
+        "archives": 17,
+        "first": "2025-02",
+        "last": "2026-06"
+      },
+      "TURBOUSDT": {
+        "archives": 22,
+        "first": "2024-09",
+        "last": "2026-06"
+      },
+      "TURTLEUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "TUSDT": {
+        "archives": 53,
+        "first": "2022-02",
+        "last": "2026-06"
+      },
+      "TUTUSDT": {
+        "archives": 16,
+        "first": "2025-03",
+        "last": "2026-06"
+      },
+      "TVKUSDT": {
+        "archives": 28,
+        "first": "2021-08",
+        "last": "2023-11"
+      },
+      "TWTUSDT": {
+        "archives": 66,
+        "first": "2021-01",
+        "last": "2026-06"
+      },
+      "UFTUSDT": {
+        "archives": 26,
+        "first": "2023-03",
+        "last": "2025-04"
+      },
+      "UMAUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "UNFIUSDT": {
+        "archives": 49,
+        "first": "2020-11",
+        "last": "2024-11"
+      },
+      "UNIUSDT": {
+        "archives": 70,
+        "first": "2020-09",
+        "last": "2026-06"
+      },
+      "USUALUSDT": {
+        "archives": 20,
+        "first": "2024-11",
+        "last": "2026-06"
+      },
+      "UTKUSDT": {
+        "archives": 67,
+        "first": "2020-10",
+        "last": "2026-04"
+      },
+      "UUSDT": {
+        "archives": 6,
+        "first": "2026-01",
+        "last": "2026-06"
+      },
+      "VANAUSDT": {
+        "archives": 19,
+        "first": "2024-12",
+        "last": "2026-06"
+      },
+      "VANRYUSDT": {
+        "archives": 31,
+        "first": "2023-12",
+        "last": "2026-06"
+      },
+      "VELODROMEUSDT": {
+        "archives": 19,
+        "first": "2024-12",
+        "last": "2026-06"
+      },
+      "VETUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "VGXUSDT": {
+        "archives": 34,
+        "first": "2021-11",
+        "last": "2024-08"
+      },
+      "VIBUSDT": {
+        "archives": 28,
+        "first": "2023-02",
+        "last": "2025-05"
+      },
+      "VICUSDT": {
+        "archives": 32,
+        "first": "2023-11",
+        "last": "2026-06"
+      },
+      "VIDTUSDT": {
+        "archives": 44,
+        "first": "2021-09",
+        "last": "2025-04"
+      },
+      "VIRTUALUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "VITEUSDT": {
+        "archives": 63,
+        "first": "2019-12",
+        "last": "2025-02"
+      },
+      "VOXELUSDT": {
+        "archives": 49,
+        "first": "2021-12",
+        "last": "2025-12"
+      },
+      "VTHOUSDT": {
+        "archives": 72,
+        "first": "2020-07",
+        "last": "2026-06"
+      },
+      "WALUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "WANUSDT": {
+        "archives": 79,
+        "first": "2019-10",
+        "last": "2026-04"
+      },
+      "WAVESUSDT": {
+        "archives": 57,
+        "first": "2019-10",
+        "last": "2024-06"
+      },
+      "WAXPUSDT": {
+        "archives": 59,
+        "first": "2021-08",
+        "last": "2026-06"
+      },
+      "WCTUSDT": {
+        "archives": 15,
+        "first": "2025-04",
+        "last": "2026-06"
+      },
+      "WIFUSDT": {
+        "archives": 28,
+        "first": "2024-03",
+        "last": "2026-06"
+      },
+      "WINGUSDT": {
+        "archives": 57,
+        "first": "2020-09",
+        "last": "2025-05"
+      },
+      "WINUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "WLDUSDT": {
+        "archives": 36,
+        "first": "2023-07",
+        "last": "2026-06"
+      },
+      "WLFIUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "WNXMUSDT": {
+        "archives": 47,
+        "first": "2020-08",
+        "last": "2024-06"
+      },
+      "WOOUSDT": {
+        "archives": 53,
+        "first": "2022-02",
+        "last": "2026-06"
+      },
+      "WRXUSDT": {
+        "archives": 59,
+        "first": "2020-02",
+        "last": "2024-12"
+      },
+      "WTCUSDT": {
+        "archives": 45,
+        "first": "2020-04",
+        "last": "2023-12"
+      },
+      "WUSDT": {
+        "archives": 27,
+        "first": "2024-04",
+        "last": "2026-06"
+      },
+      "XAIUSDT": {
+        "archives": 30,
+        "first": "2024-01",
+        "last": "2026-06"
+      },
+      "XAUTUSDT": {
+        "archives": 4,
+        "first": "2026-03",
+        "last": "2026-06"
+      },
+      "XECUSDT": {
+        "archives": 58,
+        "first": "2021-09",
+        "last": "2026-06"
+      },
+      "XEMUSDT": {
+        "archives": 44,
+        "first": "2020-11",
+        "last": "2024-06"
+      },
+      "XLMUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "XMRUSDT": {
+        "archives": 53,
+        "first": "2019-10",
+        "last": "2024-02"
+      },
+      "XNOUSDT": {
+        "archives": 54,
+        "first": "2022-01",
+        "last": "2026-06"
+      },
+      "XPLUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "XRPUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "XTZUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "XVGUSDT": {
+        "archives": 61,
+        "first": "2021-06",
+        "last": "2026-06"
+      },
+      "XVSUSDT": {
+        "archives": 69,
+        "first": "2020-10",
+        "last": "2026-06"
+      },
+      "XZCUSDT": {
+        "archives": 10,
+        "first": "2020-04",
+        "last": "2021-01"
+      },
+      "YBUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "YFIIUSDT": {
+        "archives": 36,
+        "first": "2020-09",
+        "last": "2023-08"
+      },
+      "YFIUSDT": {
+        "archives": 71,
+        "first": "2020-08",
+        "last": "2026-06"
+      },
+      "YGGUSDT": {
+        "archives": 58,
+        "first": "2021-09",
+        "last": "2026-06"
+      },
+      "ZAMAUSDT": {
+        "archives": 5,
+        "first": "2026-02",
+        "last": "2026-06"
+      },
+      "ZBTUSDT": {
+        "archives": 9,
+        "first": "2025-10",
+        "last": "2026-06"
+      },
+      "ZECUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ZENUSDT": {
+        "archives": 72,
+        "first": "2020-07",
+        "last": "2026-06"
+      },
+      "ZILUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "ZKCUSDT": {
+        "archives": 10,
+        "first": "2025-09",
+        "last": "2026-06"
+      },
+      "ZKPUSDT": {
+        "archives": 6,
+        "first": "2026-01",
+        "last": "2026-06"
+      },
+      "ZKUSDT": {
+        "archives": 25,
+        "first": "2024-06",
+        "last": "2026-06"
+      },
+      "ZROUSDT": {
+        "archives": 25,
+        "first": "2024-06",
+        "last": "2026-06"
+      },
+      "ZRXUSDT": {
+        "archives": 81,
+        "first": "2019-10",
+        "last": "2026-06"
+      },
+      "\u5e01\u5b89\u4eba\u751fUSDT": {
+        "archives": 6,
+        "first": "2026-01",
+        "last": "2026-06"
+      }
+    }
+  },
+  "concentration": {
+    "top_1pct": 5.222387125151341,
+    "top_5pct": 14.144976163363616,
+    "top_10pct": 19.999815581555644
+  }
+}

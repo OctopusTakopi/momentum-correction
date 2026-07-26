@@ -1,0 +1,23 @@
+{
+  "config": {
+    "volume_count": 50,
+    "volume_lookback": 30,
+    "momentum_lookback": 20,
+    "volatility_lookback": 20,
+    "momentum_percentile": 0.8,
+    "correction_sigma": 1.0,
+    "order_life_days": 3,
+    "holding_days": 5,
+    "max_symbol_fraction": 0.1,
+    "max_gross_fraction": 1.0,
+    "initial_equity": 100000.0,
+    "entry_maker_bps": 10.0,
+    "entry_taker_bps": 10.0,
+    "exit_taker_bps": 10.0,
+    "market_entry_slippage_bps": 5.0,
+    "exit_slippage_bps": 5.0,
+    "start": "2020-01-01",
+    "end": "2026-06-30"
+  },
+  "test_start": "2024-01-01"
+}
