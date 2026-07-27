@@ -78,8 +78,8 @@ changes the account more than any other single decision tested here.
 ![Account equity for the gated variants against the ungated baseline, with drawdowns underneath](results/figures/fig14_regime_equity.png)
 
 The gated and ungated books track each other through 2020 and 2021, ending that
-year within 32% of one another. Across 2022 the ungated book falls from $1.62M
-to $0.53M while the gated books hold between $1.33M and $1.41M, and the gap
+year within 32% of one another. Across 2022 the ungated book falls from \$1.62M
+to \$0.53M while the gated books hold between \$1.33M and \$1.41M, and the gap
 never closes. The gate does not trade better. It declines to trade at all
 through the one year that destroys the ungated book.
 
@@ -135,7 +135,6 @@ is not what separates this reconstruction from his result.
 |---|---|
 | [results/report.md](results/report.md) | The report, with all fourteen figures |
 | [SOURCE.md](SOURCE.md) | What the source published, what it left open, and the chart measured rather than described |
-| [AUDIT.md](AUDIT.md) | Look-ahead, survivorship, accounting and statistics review |
 | Sections 1 to 11 below | The specification, frozen before any data was downloaded |
 
 The specification came first. Nothing in it was edited after the results
@@ -170,7 +169,6 @@ make intraday-cache intraday
 momentum-correction/
   README.md      this file: results, then the frozen specification
   SOURCE.md      the source, and the boundary of what it published
-  AUDIT.md       the review
   engine.py      features, simulation, performance
   scripts/       pipeline stages, one concern each
   results/       one report, its figures, and the tables behind them
@@ -196,33 +194,33 @@ a research hypothesis rather than a claim about what the author did.
 
 Use UTC daily signal bars and intraday trades or quotes for execution:
 
-\[
+```math
 \theta=(N_V,L_V,L_m,L_\sigma,q_m,\kappa,J,H,\rho,\bar\rho)
-\]
+```
 
 with
 
 | Parameter | Baseline | Meaning |
 |---|---:|---|
-| \(N_V\) | 50 | number of coins selected by trailing volume |
-| \(L_V\) | 30 | volume-ranking lookback in complete days |
-| \(L_m\) | 20 | momentum lookback in complete days |
-| \(L_\sigma\) | 20 | realized-volatility lookback |
-| \(q_m\) | 0.80 | cross-sectional momentum percentile |
-| \(\kappa\) | 1.0 | correction depth in daily-volatility units |
-| \(J\) | 3 | limit-order life in days |
-| \(H\) | 5 | holding period in days |
-| \(\rho\) | 10% | maximum capital reserved per coin |
-| \(\bar\rho\) | 100% | maximum total reserved plus invested capital |
+| $N_V$ | 50 | number of coins selected by trailing volume |
+| $L_V$ | 30 | volume-ranking lookback in complete days |
+| $L_m$ | 20 | momentum lookback in complete days |
+| $L_\sigma$ | 20 | realized-volatility lookback |
+| $q_m$ | 0.80 | cross-sectional momentum percentile |
+| $\kappa$ | 1.0 | correction depth in daily-volatility units |
+| $J$ | 3 | limit-order life in days |
+| $H$ | 5 | holding period in days |
+| $\rho$ | 10% | maximum capital reserved per coin |
+| $\bar\rho$ | 100% | maximum total reserved plus invested capital |
 
 One parameter vector must be selected before the final test period. A
 predeclared robustness grid may vary one dimension at a time:
 
-\[
+```math
 L_m\in\{10,20,60\},\qquad
 \kappa\in\{0.5,1.0,1.5,2.0\},\qquad
 H\in\{1,3,5,10\}.
-\]
+```
 
 Every grid cell is reported. The best historical cell is not relabeled as
 the baseline.
@@ -230,16 +228,16 @@ the baseline.
 ## 2. Point-in-time universe
 
 The baseline venue is Binance Spot and the quote asset is USDT. At the end
-of day \(t\), define trailing quote volume
+of day $t$, define trailing quote volume
 
-\[
+```math
 V_{u,t}
 =
-\sum_{j=0}^{L_V-1}\operatorname{QuoteVolume}_{u,t-j}.
-\]
+\sum_{j=0}^{L_V-1}\mathrm{QuoteVolume}_{u,t-j}.
+```
 
-Let \(\mathcal U_t\) be the \(N_V\) pairs with the largest \(V_{u,t}\) among
-pairs that, using information available at \(t\):
+Let $\mathcal U_t$ be the $N_V$ pairs with the largest $V_{u,t}$ among
+pairs that, using information available at $t$:
 
 - were listed throughout the required signal lookback;
 - are actively tradable against USDT;
@@ -247,60 +245,60 @@ pairs that, using information available at \(t\):
 - are not leveraged-token, index, or wrapped duplicates.
 
 Current listings must never be projected backward. Delisted pairs remain in
-historical universes. Quote volume from day \(t\) is usable only after its
+historical universes. Quote volume from day $t$ is usable only after its
 bar closes, and orders activate strictly after that close.
 
-Let \(C_{u,t}\) be the close and
+Let $C_{u,t}$ be the close and
 
-\[
+```math
 r_{u,t}=\log\frac{C_{u,t}}{C_{u,t-1}}.
-\]
+```
 
 ## 3. Momentum signal
 
-Using only complete bars through \(t\), estimate daily volatility:
+Using only complete bars through $t$, estimate daily volatility:
 
-\[
+```math
 \widehat\sigma_{u,t}
 =
 \sqrt{
 \frac{1}{L_\sigma-1}
 \sum_{j=0}^{L_\sigma-1}
-\left(r_{u,t-j}-\bar r_{u,t}\right)^2
+(r_{u,t-j}-\bar r_{u,t})^2
 },
 \qquad
 \bar r_{u,t}
 =
 \frac1{L_\sigma}
 \sum_{j=0}^{L_\sigma-1}r_{u,t-j}.
-\]
+```
 
 Define volatility-normalized momentum
 
-\[
+```math
 m_{u,t}
 =
 \frac{\log(C_{u,t}/C_{u,t-L_m})}
 {\widehat\sigma_{u,t}\sqrt{L_m}}.
-\]
+```
 
-Let \(p_{u,t}\) be the percentile rank of \(m_{u,t}\) within
-\(\mathcal U_t\). The signal is
+Let $p_{u,t}$ be the percentile rank of $m_{u,t}$ within
+$\mathcal U_t$. The signal is
 
-\[
+```math
 I_{u,t}
 =
 \mathbf 1\{m_{u,t}>0\}
 \mathbf 1\{p_{u,t}\ge q_m\}.
-\]
+```
 
 The first condition requires positive time-series momentum. The second keeps
 only the strongest cross-sectional momentum. Define the monotone signal
 strength
 
-\[
+```math
 a_{u,t}=I_{u,t}m_{u,t}.
-\]
+```
 
 This formalizes the source statement that stronger momentum is a stronger
 signal without treating the least-bad coin in a falling market as a winner.
@@ -309,59 +307,59 @@ signal without treating the least-bad coin in a falling market as a winner.
 
 For each new signal, compute the unrounded buy limit
 
-\[
+```math
 \widetilde L_{u,t}
 =
-C_{u,t}\exp\left(-\kappa\widehat\sigma_{u,t}\right)
-\]
+C_{u,t}\exp(-\kappa\widehat\sigma_{u,t})
+```
 
-and round down to the valid venue tick \(\delta_{u,t}\):
+and round down to the valid venue tick $\delta_{u,t}$:
 
-\[
+```math
 L_{u,t}
 =
 \delta_{u,t}
-\left\lfloor
+\lfloor
 \frac{\widetilde L_{u,t}}{\delta_{u,t}}
-\right\rfloor.
-\]
+\rfloor.
+```
 
 The requested log correction in volatility units is approximately
 
-\[
+```math
 d_{u,t}
 =
 \frac{\log(C_{u,t}/L_{u,t})}{\widehat\sigma_{u,t}}
 \approx\kappa.
-\]
+```
 
-The order is active after close \(t\) and expires after \(J\) complete daily
-bars. Let \(S_u(s)\) be the timestamped trade price. Its first possible fill
+The order is active after close $t$ and expires after $J$ complete daily
+bars. Let $S_u(s)$ be the timestamped trade price. Its first possible fill
 time is
 
-\[
+```math
 \tau_{u,t}
 =
-\inf\left\{
+\inf\{
 s\in(t,t+J\text{ days}]:
 S_u(s)<L_{u,t}
-\right\}.
-\]
+\}.
+```
 
 The strict trade-through condition is the baseline because a print exactly
 at the limit does not prove that the strategy's queue position filled. The
 fill price is conservatively set to
 
-\[
+```math
 P^{\mathrm{in}}_{u,t}=L_{u,t},
-\]
+```
 
 even if the market trades lower. A separate optimistic sensitivity may use
 touch fills; it must not replace the baseline.
 
 Before a fill, cancel the order when:
 
-- \(J\) days elapse;
+- $J$ days elapse;
 - a later completed daily bar no longer satisfies the momentum signal;
 - the pair leaves the eligible universe or becomes untradable;
 - its reserved capital is no longer valid under a venue rule.
@@ -370,27 +368,27 @@ There is at most one active order or open position per coin. A new signal
 does not move an existing limit and does not reset its expiry.
 
 If only OHLC bars are available, a bar with
-\(\operatorname{Low}<L_{u,t}\) may proxy a trade-through. Such a run is
+$\mathrm{Low}<L_{u,t}$ may proxy a trade-through. Such a run is
 labeled a bar-fill approximation; it cannot establish queue execution.
 
 ## 5. Capital reservation and sizing
 
-Let \(E_t\) be marked portfolio equity and \(A_t\) the capital available
+Let $E_t$ be marked portfolio equity and $A_t$ the capital available
 after existing positions and active orders. New orders reserve cash when
 they are placed, so later fills cannot create hindsight leverage.
 
 For the new signal set
 
-\[
+```math
 \mathcal C_t
 =
 \{u\in\mathcal U_t:I_{u,t}=1,\ u\text{ has no order or position}\},
-\]
+```
 
-allocate the available reservation budget \(R_t\) by frozen momentum
+allocate the available reservation budget $R_t$ by frozen momentum
 strength:
 
-\[
+```math
 R_{u,t}^{*}
 =
 R_t
@@ -398,35 +396,35 @@ R_t
 \qquad
 R_t
 =
-\min\left(
+\min(
 A_t,\,
-\max\left[
+\max[
 0,\,
 \bar\rho E_t-\text{capital already reserved or invested}
-\right]
-\right).
-\]
+]
+).
+```
 
 Cap each order and redistribute any excess repeatedly among uncapped
 candidates:
 
-\[
+```math
 0\le R_{u,t}\le\rho E_t,\qquad
 \sum_{u\in\mathcal C_t}R_{u,t}\le R_t.
-\]
+```
 
-For taker-or-worse entry fee rate \(f^{\mathrm{in}}_{u,t}\) and quantity step
-\(\Delta q_{u,t}\), choose
+For taker-or-worse entry fee rate $f^{\mathrm{in}}_{u,t}$ and quantity step
+$\Delta q_{u,t}$, choose
 
-\[
+```math
 q_{u,t}
 =
 \Delta q_{u,t}
-\left\lfloor
+\lfloor
 \frac{R_{u,t}}
 {\Delta q_{u,t}L_{u,t}(1+f^{\mathrm{in}}_{u,t})}
-\right\rfloor.
-\]
+\rfloor.
+```
 
 The order is skipped when this rounds to zero or breaches the venue's
 minimum notional. Unfilled and canceled orders release their reservation.
@@ -435,15 +433,15 @@ yield on idle cash.
 
 ## 6. Exit and exact P&L
 
-For a fill at timestamp \(\tau_{u,t}\), schedule the exit after exactly
-\(H\) 24-hour periods:
+For a fill at timestamp $\tau_{u,t}$, schedule the exit after exactly
+$H$ 24-hour periods:
 
-\[
+```math
 \xi_{u,t}=\tau_{u,t}+H\cdot24\text{ hours}.
-\]
+```
 
 Execute a marketable sell against the first valid bid at or after
-\(\xi_{u,t}\). Let \(P^{\mathrm{out}}_{u,t}\) be its volume-weighted fill
+$\xi_{u,t}$. Let $P^{\mathrm{out}}_{u,t}$ be its volume-weighted fill
 after walking the recorded book. If only top-of-book data are available,
 cap quantity by displayed bid size or apply a separately reported slippage
 model. Never substitute a midpoint or candle close in an executable run.
@@ -451,105 +449,105 @@ model. Never substitute a midpoint or candle close in an executable run.
 There is no stop, profit target, scale-in, or re-entry before exit. A later
 signal may create a new order only after the prior position closes.
 
-With explicit entry and exit costs \(c^{\mathrm{in}}_{u,t}\) and
-\(c^{\mathrm{out}}_{u,t}\), trade P&L is
+With explicit entry and exit costs $c^{\mathrm{in}}_{u,t}$ and
+$c^{\mathrm{out}}_{u,t}$, trade P&L is
 
-\[
+```math
 \Pi_{u,t}
 =
 q_{u,t}
-\left(P^{\mathrm{out}}_{u,t}-P^{\mathrm{in}}_{u,t}\right)
+(P^{\mathrm{out}}_{u,t}-P^{\mathrm{in}}_{u,t})
 -c^{\mathrm{in}}_{u,t}-c^{\mathrm{out}}_{u,t}.
-\]
+```
 
 Return on reserved capital is
 
-\[
+```math
 r^R_{u,t}=\frac{\Pi_{u,t}}{R_{u,t}}.
-\]
+```
 
 Portfolio equity is marked at executable bid:
 
-\[
+```math
 E_s
 =
 \text{cash}_s
 +\sum_{(u,t)\in\mathcal P_s}
 q_{u,t}B_u(s),
-\]
+```
 
-where \(\mathcal P_s\) is the set of open positions. Reserved cash for
+where $\mathcal P_s$ is the set of open positions. Reserved cash for
 unfilled orders remains cash, not exposure.
 
 ## 7. Quant trading hypothesis
 
 Define the entry event
 
-\[
+```math
 \mathcal A_{u,t}(\kappa)
 =
 \{I_{u,t}=1,\ \tau_{u,t}<\infty\}.
-\]
+```
 
 The strategy combines two conditional effects:
 
-\[
-\underbrace{m_{u,t}>0}_{\text{medium-horizon continuation}}
+```math
+m_{u,t}>0
 \quad+\quad
-\underbrace{S_u(\tau)<L_{u,t}}_{\text{short-horizon correction}}.
-\]
+S_u(\tau)<L_{u,t}.
+```
 
 Its gross directional hypothesis is
 
-\[
+```math
 \mu(m,\kappa,H)
 =
 \mathbb E
-\left[
+[
 \frac{P^{\mathrm{out}}_{u,t}}
 {P^{\mathrm{in}}_{u,t}}-1
-\;\middle|\;
+\mid
 \mathcal A_{u,t}(\kappa),\,m_{u,t}=m
-\right]
+]
 >0.
-\]
+```
 
 Positive executable expectancy requires more:
 
-\[
+```math
 \mathbb E[\Pi_{u,t}\mid\mathcal A_{u,t}(\kappa)]>0,
-\]
+```
 
 and the corresponding normalized conditional edge is
 
-\[
+```math
 \mathbb E
-\left[
+[
 \frac{P^{\mathrm{out}}_{u,t}}
 {P^{\mathrm{in}}_{u,t}}-1
 -
 \frac{c^{\mathrm{in}}_{u,t}+c^{\mathrm{out}}_{u,t}}
 {q_{u,t}P^{\mathrm{in}}_{u,t}}
-\;\middle|\;
+\mid
 \mathcal A_{u,t}(\kappa),\,m_{u,t}=m
-\right]
+]
 >0.
-\]
+```
 
-Equivalently at a fixed \(m\), the gross conditional return must exceed
+Equivalently at a fixed $m$, the gross conditional return must exceed
 normalized costs:
 
-\[
+```math
 \mu(m,\kappa,H)
 >
 \mathbb E
-\left[
+[
 \frac{c^{\mathrm{in}}_{u,t}+c^{\mathrm{out}}_{u,t}}
 {q_{u,t}P^{\mathrm{in}}_{u,t}}
-\;\middle|\;
+\mid
 \mathcal A_{u,t}(\kappa),\,m_{u,t}=m
-\right].
-\]
+].
+```
 
 Shallow limits primarily condition on pre-existing momentum. Deep limits
 condition on a larger adverse move and therefore add a stronger reversal
@@ -577,7 +575,7 @@ only terminal equity curves.
 
 The ordered source claims are evaluated without selecting the best bin:
 
-\[
+```math
 r^R_{u,t}
 =
 \alpha
@@ -586,9 +584,9 @@ r^R_{u,t}
 +\beta_{md}m_{u,t}d_{u,t}
 +\gamma^\top Z_{u,t}
 +\varepsilon_{u,t},
-\]
+```
 
-where \(Z\) is predeclared and may contain market return, market volatility,
+where $Z$ is predeclared and may contain market return, market volatility,
 coin volatility, volume rank, spread, and calendar effects. Standard errors
 are clustered by entry date; block bootstrap samples preserve serial and
 cross-coin dependence.

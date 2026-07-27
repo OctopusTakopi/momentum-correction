@@ -10,7 +10,7 @@ The post gives three rules:
 
 1. measure momentum;
 2. enter a correction with a limit order;
-3. exit after \(X\) days.
+3. exit after $X$ days.
 
 It proposes two ordered relationships: stronger momentum should imply a
 stronger signal, and a deeper correction should imply a stronger entry.
@@ -85,7 +85,7 @@ The post does **not** publish:
 - the volume lookback or exact universe reconstruction;
 - the correction definition or depth;
 - the limit-order lifetime, queue model, or gap-fill convention;
-- the value of \(X\);
+- the value of $X$;
 - portfolio sizing or overlapping-position rules;
 - transaction costs, liquidity constraints, or execution venue;
 - trade-level data or code.
